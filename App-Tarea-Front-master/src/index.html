@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Uso de Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>App De Tareas</title>
+
+
+</head>
+
+<body>
+    <!--Navegacion-->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container"><a href="#" class="navbar-brand">App Tarea</a>
+        </div>
+    </nav>
+    <!--Contenido Principal-->
+    <div class="container">
+        <div class="row pt-5">
+            <!--Padding Top: es el espacio entre el contenido del elemento y su borde-->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="formulario">
+                            <div class="form-group">
+                                <!--Para Agrupar el formulario-->
+                                <input type="text" id="titulo" placeholder="Agregue Una Tarea" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="descripcion" cols="80" rows="8" class="form-control"
+                                    placeholder="Añada Como lo va a hacer"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                Agregar Tarea
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div id="tareas"></div>
+            </div>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+
+</html>
